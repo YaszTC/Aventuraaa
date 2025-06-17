@@ -90,10 +90,22 @@
     </div>
          
     <div id="f12">
-     <div id="f13"> <h1>por favor, reproduce esta canción antes de leer</h1> 
-      <a href="https://open.spotify.com/track/6EBPGW7GqFlGYAY1fSXwjI?si=5spKltg4SJu6NXFOkXVvMw" target="_blank">> reproduces la canción. </a>
-       <span class="go">> seguir leyendo.</span>
-      </div>
+     <div id="f13">
+  <h1>Por favor, reproduce esta canción antes de leer</h1>
+
+  <audio id="miCancion" src="https://raw.githubusercontent.com/YaszTC/Intro/main/song.mp3" loop></audio>
+
+  <br><br>
+  <span class="go" onclick="reproducirCancion()">> Seguir leyendo.</span>
+</div>
+
+<script>
+  function reproducirCancion() {
+    const cancion = document.getElementById('miCancion');
+    cancion.play();
+  }
+</script>
+
       
       
       <div id="f14">Si alguien me hubiera preguntado 1 año atrás si creía volver a darme la oportunidad de estar con alguien, me habría reído en su cara. No es que no crea en el amor, o que sienta que soy demasiado bueno para ello, sino que es más bien todo lo contrario, no creia que alguien me aceptara tal como soy, pero tu cambiaste eso...
